@@ -1,0 +1,14 @@
+.navbar-light{
+    background-color:antiquewhite;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background-image:url("../assets/supersubs.jpg");
+    
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
