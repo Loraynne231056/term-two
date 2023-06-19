@@ -18,7 +18,7 @@ nav{
 .form-el{
     margin-top: 30px;
     width: 45%;
-    height: 530px;;
+    height: 580px;;
     background-color: whitesmoke;
     margin: 0 auto;
     margin-top: 35px;
@@ -36,7 +36,7 @@ nav{
     margin-bottom: 15px;
 }
 .moveMe{
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .tp-check-inline{
     padding-left: 20px;
@@ -44,15 +44,16 @@ nav{
     float: left;
 }
 .move{
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .doneBtn{
-    margin-top: 30px;
+    padding-left: 40px;
+    margin-top: 40px;
 }
 
 .txt{
-    margin-left: 23px;
-    margin-top: 30px;
+    margin-left: 28px;
+    margin-top: 40px;
     width: 80%;
     height: 50px;
     background-color: #d4d4d4;

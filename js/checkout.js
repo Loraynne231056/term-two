@@ -24,8 +24,8 @@ displayCheckOut = () => {
             <ul class="list-group list-group-flush">
             <li class="list-group-item">Bread: ${bread}</li>
             <li class="list-group-item">Sauces: ${sauces}</li>
-            <li class="list-group-item">Toppings: ${toppings}</li>
-            <li class="list-group-item">Price: ${price}</li>
+            <li class="list-group-item">Toppings: ${toppings.join(", ")}</li>
+            <li class="list-group-item">Price: R${price}.00</li>
             </ul>`
         
         totalArea.innerHTML = "R" + checkTotal + ".00";
@@ -37,7 +37,7 @@ discount = () => {
     
     let discount = document.getElementById('promo').value
     let totalArea = document.getElementById('outTotal');
-    
+
     for(let i = 0; i < data.length; i++){
         let price = data[i].totalCost;
         

@@ -88,7 +88,7 @@ realSubCost = () => {
     if(sauces === "Mustard"){
         realSubPrice = realSubPrice +5;
     } else if(sauces === "Honey"){
-        realSubPrice = realSubPrice +6;
+        realSubPrice = realSubPrice +7;
     } else if(sauces === "Tomato Sauce"){
         realSubPrice = realSubPrice +4;
     }
