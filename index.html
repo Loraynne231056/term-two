@@ -17,8 +17,9 @@
 
 </head>
 <body>
+  <!--NavBar-->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.html">Navbar</a>
+    <a class="navbar-brand" href="index.html"><img src="assets/SuperSubs.svg" alt="SuperSubs Logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,16 +27,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+          <a class="nav-link" href="../index.html">Home<span class="sr-only"></span></a>
         </li>
           <li class="nav-item">
-            <a class="nav-link" href="">About Us</a>
+            <a class="nav-link" href="#boutUs">About Us</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="pages/subpage.html">Order</a>
+              <a class="nav-link" href="../pages/subpage.html">Order</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="pages/checkout.html">Checkout</a>
+              <a class="nav-link" href="../pages/checkout.html">Checkout</a>
             </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -44,72 +45,127 @@
       </form>
     </div>
   </nav>
-  <header>
 
+  <header>
+    <div class="overlay-header">
+      <h1>Welcome to SuperSubs!</h1>
+      <h3>Get the best subs at the lowest prices</h3>
+
+          <div class="btn inverted"><a href="#subShow" style="color:white"><h5>Popular</h5></a></div>
+          <div class="btn normal"><a href="pages/subpage.html" style="color:black"><h5>Make</h5></a></div>     
+  </div> 
   </header>
+
      <!--About Us-->
-     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+
+      <div class="container" class="about" id="boutUs" >
+        <div class="row">
+          <div class=" col-6">
+            <div class="image-box"></div>
+          </div>
+          <div class=" col-6 about-body"><h1>About Us</h1>
+          <p class="lead">Hello world! Wait... before you scroll away, let us introduce ourselves. We are SuperSubs! We are motivated to give our clients the best variety, and biggest subs they have ever seen. Our motto is, "The more subs the better!" Get in the Sub losers, we're going to eat overpriced sandwiches with cucumbers on it. We hope you'll join us on our next deep-sea sandwich adventure soon! </p>
+          </div>
+        </div>
       </div>
-    </div>
+    
+    <!--Subs of the Month-->
     <div class="container">
+      <div id="txt">
+        <h3>Subs of The Month</h3>
+        <div id="subShow"></div>
+      </div>
       <div class="row">
-        <!--Subs of the Month-->
-        <div class="col-3"><div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="assets/AmericanFavorite.jpg" alt="Card image cap">
+        <div class="col-3">
+          <div class="card" style="width: 16rem;" >
+            <img class="card-img-top" src="assets/Earl-of-Sandwich.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Godless Creation</h5>
+              <p class="card-text">A very sad Sub. It is gross. The creator is proud, though.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+        <div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/egees.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Gareth The Great</h5>
+            <p class="card-text">It has bacon on and tomatoes. Who doesn't love Gareth?</p>
           </div>
         </div>
       </div>
         <div class="col-3">
-          <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="assets/AmericanFavorite.jpg" alt="Card image cap">
+          <div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/Garry.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Cool Beans</h5>
+            <p class="card-text">It contains no beans. Only coolness.</p>
           </div>
         </div>
       </div>
         <div class="col-3">
-          <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="assets/AmericanFavorite.jpg" alt="Card image cap">
+          <div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/gross.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Fedorovna</h5>
+            <p class="card-text">Ivan Ilyich would rather die</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"><div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/Killmepls.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Earl-of-Sandwiches</h5>
+            <p class="card-text">A distinguished gentleman. He likes top hats.</p>
           </div>
         </div>
       </div>
         <div class="col-3">
-          <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="assets/AmericanFavorite.jpg" alt="Card image cap">
+          <div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/jerseymike.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Catharsis-at-3am</h5>
+            <p class="card-text">When your code finally works.</p>
           </div>
         </div>
       </div>
+        <div class="col-3">
+          <div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/veggie.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Vegeta</h5>
+            <p class="card-text">That one veggie sandwich we all ignore.</p>
+          </div>
+        </div>
+      </div>
+        <div class="col-3">
+          <div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/AmericanFavorite.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Group Presentations</h5>
+            <p class="card-text">I can make a better sandwich on my own</p>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
+<!--Footer-->
     <footer>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4"> 
-        
-        </div>
         <div class="col-4">
+          <div class="logo">
+            <img style="width:250px;"src="assets/SuperSubs.svg" alt="SuperSubs Logo">
+          </div> 
+        </div>
+        <div class="col-5">
           <div class="copyright">
-            <h5>SuperSubs  2021</h5>
+            <h5>SuperSubs © 2023</h5>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-3">
           <div class="socials">
             <a href="https://www.youtube.com/" target="blank"><img src="assets/youtube_icon.svg" alt=""></a>
             <a href="https://www.facebook.com/" target="blank"><img src="assets/facebook_icon.svg" alt=""></a>

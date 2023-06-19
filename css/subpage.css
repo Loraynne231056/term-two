@@ -1,8 +1,112 @@
-.navbar-light{
-    background-color:antiquewhite;
+body{
+    background-color: #faf1ca;
+}
+nav{
+    height: 120px;
+    background-color:whitesmoke;
+}
+.months{
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+}
+.active{
+    font-weight: bold;
+    border-bottom: 2px solid #2b2b2b;
+}
+
+.form-el{
+    margin-top: 30px;
+    width: 45%;
+    height: 530px;;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.form-el h2{
+    padding-left: 80px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
+}
+.moveMeToo{
+    margin-bottom: 15px;
+}
+.moveMe{
+    margin-top: 15px;
+}
+.tp-check-inline{
+    padding-left: 20px;
+    width: 30%;
+    float: left;
+}
+.move{
+    margin-top: 15px;
+}
+.doneBtn{
+    margin-top: 30px;
+}
+
+.txt{
+    margin-left: 23px;
+    margin-top: 30px;
+    width: 80%;
+    height: 50px;
+    background-color: #d4d4d4;
+    border-radius: 8px;
+}
+.txt h2{
+    padding-top: 4px;
+    padding-left: 48px;
+}
+.display{
+    width: 63%;
+    height: 50px;
+    margin:  0 auto;
+    margin-top: 30px;
+    border-bottom: 2px solid #2b2b2b;
+    margin-bottom: 15px;
+}
+.card-holder{
+    width: 70%;
+    margin: 0 auto;
+}
+.currentBox h3{
+    float: left;
+}
+
+.totalOrder{
+    margin-left: 585px;
+}
+
+.currentPrice{
+    margin: 0 auto;
+}
+.card{
+    margin-top: 30px;
+}
+.card-body{
+    height: fit-content;
+    margin: auto 0;
 }
 footer{
+    margin-top: 50px;
     width: 100%;
-    height: 100px;
-    background-color: aqua;
+    height: 150px;
+    background-color:#cdfcff;
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.copyright{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.socials{
+    margin-left: 10px;
+    margin-top: 41px;
 }

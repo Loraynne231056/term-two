@@ -16,26 +16,26 @@
     <script type ="application/javascript" src="../js/checkout.js"></script>
 
 </head>
-<body>
+<body onload="displayCheckOut()">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html">Navbar</a>
+        <a class="navbar-brand" href="../index.html"><img src="../assets/SuperSubs.svg" alt="SuperSubs Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="../index.html">Home<span class="sr-only"></span></a>
                 </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="../#boutUs">About Us</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="../pages/subpage.html">Order</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../pages/checkout.html">Checkout</a>
+                      <a class="nav-link active" href="../pages/checkout.html">Checkout</a>
                     </li>
               </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -44,23 +44,48 @@
           </form>
         </div>
       </nav>
+
+      <div class="container">
+        <div class = "row" id="checkoutContent"> 
+          <div class="col-9 box">
+              <div class="card-body">
+                  <div class="card" style="width: 80%; height: overflow;">
+                    <div id="orderCheck" >
+                    </div>
+                  </div>
+              </div>
+              <div class="roblox">
+                  <h2>Your Total</h2>
+                  <h3 id="outTotal" class="total">R0.00</h3>
+                  <div class ="typeGroup">
+                    <input type="text" id="promo">
+                    <button class="promo-btnz btn-primary" onclick="discount()">Click Me</button>
+                  </div>
+                  <button type="button" class="btnz btn-primary btn-lg" onclick="reset()">Make Payment</button>
+              </div>
+          </div>
+        </div>
+      </div>
+
       <footer>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-4"> 
-            
-            </div>
             <div class="col-4">
+              <div class="logo">
+                <img style="width:200px;"src="../assets/SuperSubs.svg" alt="SuperSubs Logo">
+              </div> 
+            </div>
+            <div class="col-5">
               <div class="copyright">
-                <h5>SuperSubs  2021</h5>
+                <h5>SuperSubs © 2023</h5>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
               <div class="socials">
-                <a href="https://www.youtube.com/" target="blank"><img src="assets/youtube_icon.svg" alt=""></a>
-                <a href="https://www.facebook.com/" target="blank"><img src="assets/facebook_icon.svg" alt=""></a>
-                <a href="https://twitter.com/" target="blank"><img src="assets/twitter_icon.svg" alt=""></a>
-                <a href="https://www.instagram.com/" target="blank"><img src="assets/instagram_icon.svg" alt=""></a>
+                <a href="https://www.youtube.com/" target="blank"><img src="../assets/youtube_icon.svg" alt=""></a>
+                <a href="https://www.facebook.com/" target="blank"><img src="../assets/facebook_icon.svg" alt=""></a>
+                <a href="https://twitter.com/" target="blank"><img src="../assets/twitter_icon.svg" alt=""></a>
+                <a href="https://www.instagram.com/" target="blank"><img src="../assets/instagram_icon.svg" alt=""></a>
               </div>
             </div>
           </div>

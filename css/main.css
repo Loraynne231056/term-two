@@ -1,14 +1,94 @@
-.navbar-light{
-    background-color:antiquewhite;
+nav{
+    height: 120px;
+    background-color:whitesmoke;
+}
+#txt h3{
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 header{
     width: 100%;
     height: 600px;
     background-image:url("../assets/supersubs.jpg");
-    
+}
+.overlay-header{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 150px;
+    padding-top: 200px;
+    margin-top: -96px;
+    color: white;
+}
+.bt{
+    width: 100px;
+    height: 65px;
+    border-radius: 50px;
+    border: 3px solid #12eb36;
+}
+.inverted{
+    margin-top: 40px;
+    background-color:#12eb36 ;
+    color: black;
+    border: 3px solid #12eb36;
+}
+.normal{
+    margin-top: 40px;
+    color: white;
+    background-color: none;
+    border: 3px solid #12eb36;
+
+}
+.normal:hover{
+    color: black;
+    background-color:#12eb36;
+    border: 3px solid #12eb36;
+
+}
+.inverted:hover{
+    cursor: pointer;
+    border: 3px solid #12eb36;
+    color: white;
+}
+.active{
+    font-weight: bold;
+    border-bottom: 2px solid #2b2b2b;
+}
+.about-body{
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.image-box{
+    width: 310px;
+    height:310px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    background-image:url("../assets/brooke-lark-RrzeCGujVfU-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+}
+.card{
+    height: 300px;
+    margin-left: 5px;
+     margin-bottom: 30px;
 }
 footer{
+    margin-top: 50px;
     width: 100%;
-    height: 100px;
-    background-color: aqua;
+    height: 150px;
+    background-color:#cdfcff;
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.copyright{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.socials{
+    margin-left: 10px;
+    margin-top: 41px;
 }

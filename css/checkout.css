@@ -1,8 +1,69 @@
-.navbar-light{
-    background-color:antiquewhite;
+body{
+    background-color: #faf1ca;
+}
+nav{
+    height: 120px;
+    background-color:whitesmoke;
+}
+.active{
+    font-weight: bold;
+    border-bottom: 2px solid #2b2b2b;
+}
+#checkoutContent{
+    margin-top: 50px;
+}
+.box{
+    margin: 0 auto;
+}
+.card{
+    margin: 0 auto;
+}
+.roblox{
+    border-radius: 30px;
+    background-color: #cdfcff;
+    width: 76%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.roblox h2{
+    padding-top: 15px;
+    margin-left: 230px;
+}
+.roblox h3{
+    margin-top: 20px;
+    margin-left: 41%;
+    margin-bottom: 35px;
+}
+.btnz{
+    width: 270px;
+    margin-left: 175px;
+    margin-top: 30px;
+}
+.promo-btnz{
+    border-radius: 5px;
+}
+.typeGroup{
+    margin-top: 20px;
+    margin-left:28%;
+
 }
 footer{
+    margin-top: 50px;
     width: 100%;
-    height: 100px;
-    background-color: aqua;
+    height: 150px;
+    background-color:#cdfcff;
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.copyright{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.socials{
+    margin-left: 10px;
+    margin-top: 41px;
 }

@@ -15,24 +15,27 @@
     <link rel="stylesheet" href="../css/subpage.css">
     <script type ="application/javascript" src="../js/subpage.js"></script>
 
+    <script src="../js/data.js"></script>
+    <script src="../js/subpage.js"></script>
+
 </head>
-<body>
+<body onload="displaySub()">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html">Navbar</a>
+        <a class="navbar-brand" href="../index.html"><img src="../assets/SuperSubs.svg" alt="SuperSubs Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="../index.html">Home<span class="sr-only"></span></a>
             </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="../#boutUs">About Us</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="../pages/subpage.html">Order</a>
+                  <a class="nav-link active" href="../pages/subpage.html">Order</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="../pages/checkout.html">Checkout</a>
@@ -44,28 +47,212 @@
           </form>
         </div>
       </nav>
-      <footer>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-4"> 
-            
-            </div>
-            <div class="col-4">
-              <div class="copyright">
-                <h5>SuperSubs  2021</h5>
+
+      <div class="months">
+        <h3>Subs of The Month</h3>
+        <div  class= "row" id="subShow"></div>
+      </div>
+
+      <form class="form-el" id="subForm" onchange="realSubCost()">
+        <h2>Build Your Subs Bitches</h2>
+        <div class="name-group row">
+          <label for="subName" class="col-sm-2 col-form-label moveMeToo">Name</label>
+          <div class="col-sm-10 moveMeToo">
+            <input type="text" class="form-control" placeholder="name" id="subName">
+          </div>
+        </div>
+
+        <fieldset class="radio-group row">
+          <div class="col-sm-2 moveMe">Bread</div>
+          <div class="col-sm-10 moveMe">
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="gridRadios" id="white" data-cost="6" value="White Bread" checked>
+                <label class="form-check-label" for="white">
+                  White Bread
+                </label>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="socials">
-                <a href="https://www.youtube.com/" target="blank"><img src="assets/youtube_icon.svg" alt=""></a>
-                <a href="https://www.facebook.com/" target="blank"><img src="assets/facebook_icon.svg" alt=""></a>
-                <a href="https://twitter.com/" target="blank"><img src="assets/twitter_icon.svg" alt=""></a>
-                <a href="https://www.instagram.com/" target="blank"><img src="assets/instagram_icon.svg" alt=""></a>
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="gridRadios" id="brown" data-cost="5" value="Brown Bread">
+                <label class="form-check-label" for="brown">
+                  Brown Bread
+                </label>
               </div>
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="gridRadios" id="rye" data-cost="10" value="Rye Bread">
+                <label class="form-check-label" for="rye">
+                  Rye Bread
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="gridRadios" id="wholeGrain" data-cost="11" value="Whole Grain">
+                <label class="form-check-label" for="wholeGrain">
+                  Whole Grain
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="gridRadios" id="glutenFree" data-cost="15" value="Gluten Free">
+                <label class="form-check-label" for="glutenFree">
+                  Gluten Free
+                </label>
+              </div>
+          </div>
+        </fieldset>
+
+        <div class="check-group row">
+          <div class="col-sm-2 moveMe">Toppings</div>
+          <div class="col-sm-10 moveMe">
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="8" value="Olives" id="olives">
+              <label class="form-check-label" for="olives">Olives</label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="10" value="Ham" id="ham">
+              <label class="form-check-label" for="ham">Ham</label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="5"value="Cheese" id="cheese">
+              <label class="form-check-label" for="cheese">
+                Cheese
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="12" value="Feta Cheese" id="feta">
+              <label class="form-check-label" for="feta">
+                Feta
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox"data-cost="4" value="Tomatoes" id="tomatoes">
+              <label class="form-check-label" for="tomatoes">
+                Tomatoes
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="4" value="Lettuce" id="lettuce">
+              <label class="form-check-label" for="lettuce">
+                Lettuce
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="13" value="Salami" id="salami">
+              <label class="form-check-label" for="salami">
+                Salami
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="15" value="Fish" id="fish">
+              <label class="form-check-label" for="fish">
+                Fish
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="14" value="Meatballs" id="meatballs">
+              <label class="form-check-label" for="meatballs">
+                Meatballs
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="5" value="Beans" id="beans">
+              <label class="form-check-label" for="beans">
+                Beans
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="6" value="Cucumber" id="cucumber">
+              <label class="form-check-label" for="cucumber">
+                Cucumber
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="4" value="Onions" id="onions">
+              <label class="form-check-label" for="onions">
+                Onions
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="8" value="Bacon" id="bacon">
+              <label class="form-check-label" for="bacon">
+                Bacon
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="7" value="Avo" id="avo">
+              <label class="form-check-label" for="avo">
+                Avo
+              </label>
+            </div>
+            <div class="tp-check-inline">
+              <input class="form-check-input" name="topCheck" type="checkbox" data-cost="5" value="Chillies" id="chillies">
+              <label class="form-check-label" for="chillies">
+                Chillies
+              </label>
             </div>
           </div>
         </div>
-        </footer>
+
+        <div class="selection-group row">
+          <div class="col-sm-2 move">Sauces</div>
+          <div class="col-sm-10 move">
+            <select class="suace-select" id="sauces">
+              <option selected>Choose a Sauce!</option>
+              <option value="Mustard">Mustard</option>
+              <option value="Tomato Sauce">Tomato Sauce</option>
+              <option value="Honey">Honey</option>
+            </select>
+          </div>
+        </div>
+        <div class="submit-group row">
+          <div class="col-sm-6 doneBtn">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="addSub (); orderDisplay(); " > Make Your Sandwich</button>
+          </div>
+          <div class="col-sm-6">
+            <div class="txt" id="realSubCost">
+            <h2>R 0.00</h2>
+          </div>
+          </div>
+        </div>
+      </form> 
+
+      <div class = "container">
+        <div class="display">
+          <div class="currentBox">
+            <h3>Your Current Order:</h3>
+            <div class =totalOrder><h3 id="orderTotal">R0.00</h3></div>
+          </div>
+        </div>
+          
+        <div card-holder>
+            <div class="row" id="orders"></div>
+        </div>
+        
+            
+        
+      </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <div class="logo">
+              <img style="width:200px;"src="../assets/SuperSubs.svg" alt="SuperSubs Logo">
+            </div> 
+          </div>
+          <div class="col-5">
+            <div class="copyright">
+              <h5>SuperSubs © 2023</h5>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="socials">
+              <a href="https://www.youtube.com/" target="blank"><img src="../assets/youtube_icon.svg" alt=""></a>
+              <a href="https://www.facebook.com/" target="blank"><img src="../assets/facebook_icon.svg" alt=""></a>
+              <a href="https://twitter.com/" target="blank"><img src="../assets/twitter_icon.svg" alt=""></a>
+              <a href="https://www.instagram.com/" target="blank"><img src="../assets/instagram_icon.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
       
 </body>
 </html>
